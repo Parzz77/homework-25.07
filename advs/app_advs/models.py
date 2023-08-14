@@ -10,4 +10,7 @@ class Advertisment(models.Model):
 
     def __str__(self):
         return f'Advertisement(id={self.id}, title= {self.title}, price= {self.price})'
+    
+    class Meta:
+        db_table = 'advs'
 # Create your models here.
